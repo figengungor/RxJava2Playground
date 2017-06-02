@@ -1,4 +1,6 @@
-# [RxJava 2](https://github.com/ReactiveX/RxJava) Playground
+Play 1 : RetroGitHub
 
-One branch for one play
+A simple Get request (Networking)
+
+
 
