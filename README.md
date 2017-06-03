@@ -1,9 +1,8 @@
-Play 1 : RetroGitHub
+#Play 1 : RetroGitHub
 
+### DisposableActivity
 
-DisposableActivity
-
-A simple Get request (Networking)
+A simple Get request (Networking) - Get user data from GitHub api
 
 Meet with Observable, Schedulers, Observer and Disposable.
 
@@ -12,22 +11,22 @@ Meet with Observable, Schedulers, Observer and Disposable.
 3. Because you want to use results on your UI thread, observe the result on UI thread.
 4. In order to start observing the Observable, you have options:
 
-a) use subscribe with Observer<T> which has four methods to implement (subscribe returns void)
+    a) use **subscribe** with **Observer<T>** which has 4 methods to implement (*subscribe returns void*)
 
-* onSubscribe(Disposable d) => Keep a reference to this subscription with Disposable so you can unsubscribe(dispose) when you're done.
-* onNext(T t) => You get your data, use it as you like.
-* onError(Throwable throwable) => You get an error.
-* onComplete() => Operation completed, No data to emit.
+        * onSubscribe(Disposable d) => Keep a reference to this subscription with Disposable so you can unsubscribe(dispose) when you're done.
+        * onNext(T t) => You get your data, use it as you like.
+        * onError(Throwable throwable) => You get an error.
+        * onComplete() => Operation completed, No data to emit.
 
-b) use subscribeWith with DisposableObserver<T> which has three methods to implement (subscribeWith returns the given observer)
+    b) use **subscribeWith** with **DisposableObserver<T>** which has 3 methods to implement (*subscribeWith returns the given observer*)
 
-* onNext(T t)
-* onError(Throwable throwable)
-* onComplete()
+        * onNext(T t)
+        * onError(Throwable throwable)
+        * onComplete()
 
-What does the app do?
-It's getting User data from GitHub api.
+### CompositeDisposableActivity
 
+Add all your disposables into CompositeDisposable and dispose them all at once when you're done.
 
 
 

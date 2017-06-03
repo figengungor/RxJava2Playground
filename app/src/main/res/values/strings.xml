@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RxJava2Playground</string>
+    <string name="disposable">Disposable</string>
+    <string name="composite_disposable">CompositeDisposable</string>
 </resources>
