@@ -3,4 +3,4 @@
 One branch for one play
 
 [Play 1 : RetroGitHub](https://github.com/figengungor/RxJava2Playground/tree/rxjava2_play1_retrogithub)
-
+[Play 2 : Operators](https://github.com/figengungor/RxJava2Playground/tree/rxjava2_play2_operators)
