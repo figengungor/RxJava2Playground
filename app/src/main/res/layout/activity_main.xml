@@ -5,10 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.figengungor.rxjava2playground.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Hello RxJava 2" />
+        android:text="@string/filtering_observables"
+        android:textAllCaps="false"
+        android:onClick="debounce"/>
 
 </RelativeLayout>

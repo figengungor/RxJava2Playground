@@ -10,7 +10,7 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 
-public class RxJavaOperatorsUnitTest {
+public class CreatingObservablesUnitTest {
 
     int sum;
     int counter;
@@ -45,7 +45,7 @@ public class RxJavaOperatorsUnitTest {
     @Test
     public void rangeOperator() {
         final Integer[] actualList = new Integer[5];
-        final Integer[] expectedList = {1,2,3,4,5};
+        final Integer[] expectedList = {1, 2, 3, 4, 5};
         Observable<Integer> integerObservable = Observable.range(1, 5);
         integerObservable.subscribe(new Consumer<Integer>() {
             @Override
@@ -56,6 +56,6 @@ public class RxJavaOperatorsUnitTest {
         });
 
         assertEquals(5, counter);
-        assertArrayEquals(actualList, expectedList);
+        assertArrayEquals(expectedList, actualList);
     }
 }

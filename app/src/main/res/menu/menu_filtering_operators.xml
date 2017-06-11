@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_no_filter"
+        android:title="@string/no_filter" />
+    <item
+        android:id="@+id/item_skip"
+        android:title="@string/skip" />
+    <item
+        android:id="@+id/item_take"
+        android:title="@string/take" />
+    <item
+        android:id="@+id/item_filter"
+        android:title="@string/filter" />
+    <item
+        android:id="@+id/item_debounce"
+        android:title="@string/debounce" />
+
+</menu>

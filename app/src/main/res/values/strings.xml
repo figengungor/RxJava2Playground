@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RxJava2Playground</string>
+    <string name="type">Type something</string>
+    <string name="no_filter">no filter</string>
+    <string name="skip">skip</string>
+    <string name="filter">filter</string>
+    <string name="debounce">debounce</string>
+    <string name="filtering_observables">Filtering Observables</string>
+    <string name="take">take</string>
 </resources>
