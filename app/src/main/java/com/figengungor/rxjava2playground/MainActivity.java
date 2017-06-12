@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void debounce(View v) {
+    public void filteringObservables(View v) {
         startActivity(new Intent(this, FilteringObservablesActivity.class));
     }
 }
