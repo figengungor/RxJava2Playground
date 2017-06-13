@@ -78,6 +78,10 @@ public class FilteringObservablesActivity extends AppCompatActivity {
                 break;
 
             case R.id.item_debounce:
+                debounce();
+                break;
+
+            case R.id.item_sample:
                 sample();
                 break;
         }

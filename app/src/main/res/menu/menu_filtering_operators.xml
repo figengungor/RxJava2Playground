@@ -16,5 +16,8 @@
     <item
         android:id="@+id/item_debounce"
         android:title="@string/debounce" />
+    <item
+        android:id="@+id/item_sample"
+        android:title="@string/sample" />
 
 </menu>
