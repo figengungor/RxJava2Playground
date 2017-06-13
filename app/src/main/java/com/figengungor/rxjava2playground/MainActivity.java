@@ -19,4 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public void filteringObservables(View v) {
         startActivity(new Intent(this, FilteringObservablesActivity.class));
     }
+
+    public void transformingObservables(View v) {
+        startActivity(new Intent(this, TransformingObservablesActivity.class));
+    }
 }

@@ -7,4 +7,11 @@
     <string name="debounce">debounce</string>
     <string name="filtering_observables">Filtering Observables</string>
     <string name="take">take</string>
+    <string name="transforming_observables">Transforming Observables</string>
+    <string name="checklogs">Check logs</string>
+    <string name="buffer_count">buffer(n)</string>
+    <string name="buffer_timespan">buffer(timespan, timeUnit)</string>
+    <string name="groupBy">groupBy</string>
+    <string name="scan">scan</string>
+    <string name="window">window</string>
 </resources>

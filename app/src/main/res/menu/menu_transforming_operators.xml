@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_buffer_count"
+        android:title="@string/buffer_count" />
+    <item
+        android:id="@+id/item_buffer_timespan"
+        android:title="@string/buffer_timespan" />
+    <item
+        android:id="@+id/item_groupBy"
+        android:title="@string/groupBy" />
+    <item
+        android:id="@+id/item_scan"
+        android:title="@string/scan" />
+    <item
+        android:id="@+id/item_window"
+        android:title="@string/window" />
+</menu>
