@@ -14,4 +14,10 @@
     <string name="groupBy">groupBy</string>
     <string name="scan">scan</string>
     <string name="window">window</string>
+    <string name="sample">sample</string>
+    <string name="combining_observables">Combining Observables</string>
+    <string name="combine_latest">combineLatest</string>
+    <string name="zip">zİp</string>
+    <string name="merge">merge</string>
+    <string name="start_with">startWith</string>
 </resources>

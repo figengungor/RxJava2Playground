@@ -23,4 +23,8 @@ public class MainActivity extends AppCompatActivity {
     public void transformingObservables(View v) {
         startActivity(new Intent(this, TransformingObservablesActivity.class));
     }
+
+    public void combiningObservables(View v) {
+        startActivity(new Intent(this, CombiningObservablesActivity.class));
+    }
 }
