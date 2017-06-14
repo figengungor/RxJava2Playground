@@ -2,7 +2,10 @@ package com.figengungor.rxjava2playground;
 
 import org.junit.Test;
 
+import java.util.concurrent.Callable;
+
 import io.reactivex.Observable;
+import io.reactivex.ObservableSource;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.functions.Consumer;
 
@@ -14,6 +17,7 @@ public class CreatingObservablesUnitTest {
 
     int sum;
     int counter;
+    int x;
 
     //Just — convert an object or a set of objects into an Observable that emits that or those objects
     @Test
@@ -57,5 +61,34 @@ public class CreatingObservablesUnitTest {
 
         assertEquals(5, counter);
         assertArrayEquals(expectedList, actualList);
+    }
+
+    //Defer — do not create the Observable until the observer subscribes, and create a fresh Observable for each observer
+    @Test
+    public void deferOperator() {
+        x=1;
+        Observable<Integer> justObservable = Observable.just(x);
+        Observable<Integer> deferObservable = Observable.defer(new Callable<ObservableSource<? extends Integer>>() {
+            @Override
+            public ObservableSource<? extends Integer> call() throws Exception {
+                return Observable.just(x);
+            }
+        });
+
+        x=2;
+
+        justObservable.subscribe(new Consumer<Integer>() {
+            @Override
+            public void accept(@NonNull Integer integer) throws Exception {
+                assertEquals(new Integer(1), integer);
+            }
+        });
+
+        deferObservable.subscribe(new Consumer<Integer>() {
+            @Override
+            public void accept(@NonNull Integer integer) throws Exception {
+                assertEquals(new Integer(2), integer);
+            }
+        });
     }
 }

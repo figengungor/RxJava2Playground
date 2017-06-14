@@ -12,6 +12,8 @@ Operators that originate new Observables.
 
 - [range](http://reactivex.io/documentation/operators/range.html)
 
+- [defer](http://reactivex.io/documentation/operators/defer.html)
+
 *TO BE CONTINUED*
 
 *Gotcha:*
