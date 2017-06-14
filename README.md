@@ -53,3 +53,14 @@ Operators that transform items that are emitted by an Observable.
 - Map — transform the items emitted by an Observable by applying a function to each item
 - Scan — apply a function to each item emitted by an Observable, sequentially, and emit each successive value
 - Window — periodically subdivide items from an Observable into Observable windows and emit these windows rather than emitting the items one at a time
+
+**Combining Observables**
+------
+Operators that work with multiple source Observables to create a single Observable
+
+**Playroom**: CombiningObservablesActivity
+
+- CombineLatest — when an item is emitted by either of two Observables, combine the latest item emitted by each Observable via a specified function and emit items based on the results of this function
+- Merge — combine multiple Observables into one by merging their emissions
+- StartWith — emit a specified sequence of items before beginning to emit the items from the source Observable
+- Zip — combine the emissions of multiple Observables together via a specified function and emit single items for each combination based on the results of this function
